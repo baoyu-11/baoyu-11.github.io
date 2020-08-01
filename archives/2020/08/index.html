@@ -6,12 +6,12 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://baoyu-11.github.io">
-  <title>宝玉的学习之路</title>
+  <title>Archives: 2020/8 | 宝玉的学习之路</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="侥幸的人生活不出人样，所以学知识要从基础开始学习">
 <meta property="og:type" content="website">
 <meta property="og:title" content="宝玉的学习之路">
-<meta property="og:url" content="https://baoyu-11.github.io/index.html">
+<meta property="og:url" content="https://baoyu-11.github.io/archives/2020/08/index.html">
 <meta property="og:site_name" content="宝玉的学习之路">
 <meta property="og:description" content="侥幸的人生活不出人样，所以学知识要从基础开始学习">
 <meta property="og:locale">
@@ -160,223 +160,41 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-node基础面试题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-    <div align="center" class="post-count">
-      字数：1.3k字 | 预计阅读时长：4分钟
-  </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>###基础部分(一)</p>
-<ol>
-<li><p>let、const、var的区别</p>
-<pre><code> （1）var声明的变量会挂载在window上，而let和const声明的变量不会
- （2）var声明变量存在变量提升，let和const不存在变量提升
- （3）let和const声明形成块作用域
- （4）同一作用域下let和const不能声明同名变量，而var可以
- （5）const一旦声明必须赋值,不能使用null占位；声明后不能再修改 ；如果声明的是复合类型数据，可以修改其属性</code></pre>
-</li>
-<li><p>array、set区别</p>
-<pre><code> array是一个数组，set类似于数组，但它存的值是唯一的，不具有重复性</code></pre>
-</li>
-<li><p>object、map区别</p>
-<pre><code>在Object中，key必须是简单数据类型（整数，字符串或者是symbol），而在Map中则可以是JavaScript支持的所有数据类型</code></pre>
-</li>
-<li><p>对象的解构</p>
-<pre><code>可以将属性值从对象数组中取出，赋值给其他变量。为了防止从数组中取出一个值为undefined的对象，可以在表达式左边的数组中为任意对象预设默认值</code></pre>
-</li>
-<li><p>filter、forEach、map、every、some、function</p>
-<pre><code> （1）filter：把符合条件的数组项返回，形成一个数组
- （2）forEach：遍历数组，只是遍历，没有返回值，相当于for循环
- （3）map：利用某规则映射得到一个新数组
- （4）every：数组中所有元素都满足满足条件，就返回true；有一个为false，就为false
- （5）some：数组中部分元素满足条件，返回true；有一个为true，就为true
- （6）function使用异步，返回值是数组类型的Promise</code></pre>
-</li>
-<li><p>如何定义一个Class</p>
-<pre><code> （1）CLASS是类
-（2） 类的定义由 类头 和 类体 两部分组成。类头由关键字 Class 开头，然后是类名，其命名规则与一般标识符的命名规则一致。类体包括所有的细节，并放在一对花括号中。类的定义也是一个语句，所以要有分号结尾，否则会产生编译错误。
-（3） 根据具体的使用场景、按照class的结构去定义class：例如，是否需要构造函数，export时是否需要实例化（如果是父类，被继承，那就不需要new）</code></pre>
-</li>
-<li><p>如何定义一个Koa2的中间件</p>
-<pre><code> 首先定义一个方法，把这个中间件导出去，然后在入口文件引入使用</code></pre>
-</li>
-<li><p>js数据结构</p>
-<pre><code>（1）数组（Array）：数组只能是一种数据,比如字符串
-（2）栈（Stack）：特点就是先进后出的结构。主要用来进行函数的调用和返回
-（3）队列（Queue）：特点就是先进先出的结构。队列是实现多任务的重要机制
-（4）链表（Linked List）：链表是struct自定义数据,通过保存下个结构的手地址来做到能增加和删除
-（5）堆（Heap）：非连续的存储方式，容量大，一般程序中的对象值（就是new出来的东西）就放在堆上
-（6）树（Tree）
-（7）图（Graph）
-（8）散列表（Hash）</code></pre>
-</li>
-<li><p>es6新特性</p>
-<pre><code> （1）块级作用域、块级变量let、块级常量const
- （2）箭头函数
- （3）参数处理（默认参数/...)
- （4）模板字面量(模板字符串)
- （5）对象的扩展
- （6）解构赋值
- （7）模块（import/export）
- （8）类（class/extends）
- （9）Promise</code></pre>
-</li>
-<li><p>JS箭头函数和function的区别</p>
-<pre><code>（1）箭头函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象
-（2）箭头函数不可以当作构造函数，也就是说，不可以使用new命令，否则会抛出一个错误</code></pre>
-<p>   （3）箭头函数不可以使用arguments对象，该对象在函数体内不存在。如果要用，可以用Rest参数代替<br>   （4）不可以使用yield命令，因此箭头函数不能用作Generator函数</p>
-</li>
-<li><p>mysql索引作用</p>
-<pre><code>（1）索引大大减少了服务器要扫描的数据量
-（2）索引可以降随机IO变为顺序IO
-（3）索引可以帮助服务器避免排序和临时表</code></pre>
-</li>
-</ol>
-<ol start="12">
-<li><p>自增id、uuid的区别</p>
-<pre><code>（1）类型不同
-（2）自增查询优化，uuid影响插入速度</code></pre>
-</li>
-<li><p>left join、inner join的区别</p>
-<pre><code>（1）left join(左联接) 返回包括左表中的所有记录和右表中联结字段相等的记录
-（2）right join(右联接) 返回包括右表中的所有记录和左表中联结字段相等的记录
-（3）inner join(等值连接) 只返回两个表中联结字段相等的行</code></pre>
-</li>
-<li><p>mysql 和modo的区别</p>
-<pre><code>mysql 关系型数据库 mongodb是非关系数据库（主要）</code></pre>
-</li>
-<li><p>mysql存储引擎 和区别</p>
-<pre><code>（1）InnoDB存储引擎：事务型数据库首选，支持事务安全表（ACID），支持行锁定和外    键是mysql 5.5之后的默认引擎
-（2）MyISAM 存储引擎：不支持事务和外键，访问速度较快，是mysql5.5 之前的默认引擎
-（3）MEMORY： 保存在内存中的数据表 ，每个memory表对应一个磁盘文件。格式是.frm  访问速度很快 缺点是：mysql服务关闭，数据丢失，另外对数据表大小有限制</code></pre>
-</li>
-</ol>
-
-      
-
+    
       
       
-      
-        <div hidden="hidden"></div>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/08/01/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+        <div class="archives">
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/31/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2020/07/31/hello-world/" class="archive-article-date">
-  	<time datetime="2020-07-31T03:32:42.739Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-31</time>
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/08/01/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2020-08-01T03:01:52.437Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-01</time>
 </a>
-        
-      </header>
-    
-    <div align="center" class="post-count">
-      字数：75字 | 预计阅读时长：1分钟
-  </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        </div>
+    	 
+        <div class="article-info info-on-right">
+          
+          
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a>
-        
-      
-
-      
-      
-      
-        <div hidden="hidden"></div>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/31/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
+    </div></section>
+  
+
+    
 
 
           </div>
@@ -400,9 +218,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
