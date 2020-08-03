@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://baoyu-11.github.io">
-  <title>node基础面试题(一) | 宝玉的学习之路</title>
+  <title>node基础面试题(二) | 宝玉的学习之路</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="let、const、var 的区别（1）var 声明的变量会挂载在 window 上，而 let 和 const 声明的变量不会（2）var 声明变量存在变量提升，let 和 const 不存在变量提升（3）let 和 const 声明形成块作用域（4）同一作用域下 let 和 const 不能声明同名变量，而 var 可以（5）const 一旦声明必须赋值,不能使用 null 占位；声明后不能">
+  <meta name="description" content="如何判断一个字符串是另一个字符串的子串indexof es6:include startWith endWith 单点登陆（可以自己查一下，我也不是特别了解）什么是单点登录？单点登录全称 Single Sign On（以下简称 SSO），是指在多系统应用群中登录一个系统，便可在其他所有系统中得到授权而无需再次登录，包括单点登录与单点注销两部分 防止 sql 注入(1).使用 escape() 对">
 <meta property="og:type" content="article">
-<meta property="og:title" content="node基础面试题(一)">
-<meta property="og:url" content="https://baoyu-11.github.io/2020/08/01/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:title" content="node基础面试题(二)">
+<meta property="og:url" content="https://baoyu-11.github.io/2020/08/03/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/index.html">
 <meta property="og:site_name" content="宝玉的学习之路">
-<meta property="og:description" content="let、const、var 的区别（1）var 声明的变量会挂载在 window 上，而 let 和 const 声明的变量不会（2）var 声明变量存在变量提升，let 和 const 不存在变量提升（3）let 和 const 声明形成块作用域（4）同一作用域下 let 和 const 不能声明同名变量，而 var 可以（5）const 一旦声明必须赋值,不能使用 null 占位；声明后不能">
+<meta property="og:description" content="如何判断一个字符串是另一个字符串的子串indexof es6:include startWith endWith 单点登陆（可以自己查一下，我也不是特别了解）什么是单点登录？单点登录全称 Single Sign On（以下简称 SSO），是指在多系统应用群中登录一个系统，便可在其他所有系统中得到授权而无需再次登录，包括单点登录与单点注销两部分 防止 sql 注入(1).使用 escape() 对">
 <meta property="og:locale">
-<meta property="article:published_time" content="2020-08-01T06:04:10.200Z">
-<meta property="article:modified_time" content="2020-08-03T03:45:29.926Z">
+<meta property="article:published_time" content="2020-08-03T03:29:34.908Z">
+<meta property="article:modified_time" content="2020-08-03T03:45:33.964Z">
 <meta property="article:author" content="鲁宝玉">
 <meta name="twitter:card" content="summary">
   
@@ -164,60 +164,45 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-node基础面试题" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-node基础面试题（二）" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      node基础面试题(一)
+      node基础面试题(二)
     </h1>
   
 
         
-        <a href="/2020/08/01/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2020-08-01T06:04:10.200Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-01</time>
+        <a href="/2020/08/03/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/" class="archive-article-date">
+  	<time datetime="2020-08-03T03:29:34.908Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-03</time>
 </a>
         
       </header>
     
     <div align="center" class="post-count">
-      字数：1.3k字 | 预计阅读时长：4分钟
+      字数：1.1k字 | 预计阅读时长：3分钟
   </div>
     <div class="article-entry" itemprop="articleBody">
       
         <ol>
-<li><p>let、const、var 的区别<br>（1）var 声明的变量会挂载在 window 上，而 let 和 const 声明的变量不会<br>（2）var 声明变量存在变量提升，let 和 const 不存在变量提升<br>（3）let 和 const 声明形成块作用域<br>（4）同一作用域下 let 和 const 不能声明同名变量，而 var 可以<br>（5）const 一旦声明必须赋值,不能使用 null 占位；声明后不能再修改 ；如果声明的是复合类型数据，可以修改其属性</p>
-</li>
-<li><p>array、set 区别<br>array 是一个数组，set 类似于数组，但它存的值是唯一的，不具有重复性<a id="more"></a></p>
-</li>
-<li><p>object、map 区别<br>在 Object 中，key 必须是简单数据类型（整数，字符串或者是 symbol），而在 Map 中则可以是 JavaScript 支持的所有数据类型</p>
-</li>
-<li><p>对象的解构<br>可以将属性值从对象数组中取出，赋值给其他变量。为了防止从数组中取出一个值为 undefined 的对象，可以在表达式左边的数组中为任意对象预设默认值</p>
-</li>
-<li><p>filter、forEach、map、every、some、function<br>（1）filter：把符合条件的数组项返回，形成一个数组<br>（2）forEach：遍历数组，只是遍历，没有返回值，相当于 for 循环<br>（3）map：利用某规则映射得到一个新数组<br>（4）every：数组中所有元素都满足满足条件，就返回 true；有一个为 false，就为 false<br>（5）some：数组中部分元素满足条件，返回 true；有一个为 true，就为 true<br>（6）function 使用异步，返回值是数组类型的 Promise</p>
-</li>
-<li><p>如何定义一个 Class<br>（1）CLASS 是类<br>（2） 类的定义由 类头 和 类体 两部分组成。类头由关键字 Class 开头，然后是类名，其命名规则与一般标识符的命名规则一致。类体包括所有的细节，并放在一对花括号中。类的定义也是一个语句，所以要有分号结尾，否则会产生编译错误。<br>（3） 根据具体的使用场景、按照 class 的结构去定义 class：例如，是否需要构造函数，export 时是否需要实例化（如果是父类，被继承，那就不需要 new）</p>
-</li>
-<li><p>如何定义一个 Koa2 的中间件<br>首先定义一个方法，把这个中间件导出去，然后在入口文件引入使用</p>
-</li>
-<li><p>js 数据结构<br>（1）数组（Array）：数组只能是一种数据,比如字符串<br>（2）栈（Stack）：特点就是先进后出的结构。主要用来进行函数的调用和返回<br>（3）队列（Queue）：特点就是先进先出的结构。队列是实现多任务的重要机制<br>（4）链表（Linked List）：链表是 struct 自定义数据,通过保存下个结构的手地址来做到能增加和删除<br>（5）堆（Heap）：非连续的存储方式，容量大，一般程序中的对象值（就是 new 出来的东西）就放在堆上<br>（6）树（Tree）<br>（7）图（Graph）<br>（8）散列表（Hash）</p>
-</li>
-<li><p>es6 新特性<br>（1）块级作用域、块级变量 let、块级常量 const<br>（2）箭头函数<br>（3）参数处理（默认参数/…)<br>（4）模板字面量(模板字符串)<br>（5）对象的扩展<br>（6）解构赋值<br>（7）模块（import/export）<br>（8）类（class/extends）<br>（9）Promise</p>
-</li>
-<li><p>JS 箭头函数和 function 的区别<br>（1）箭头函数体内的 this 对象，就是定义时所在的对象，而不是使用时所在的对象<br>（2）箭头函数不可以当作构造函数，也就是说，不可以使用 new 命令，否则会抛出一个错误<br>（3）箭头函数不可以使用 arguments 对象，该对象在函数体内不存在。如果要用，可以用 Rest 参数代替<br>（4）不可以使用 yield 命令，因此箭头函数不能用作 Generator 函数</p>
-</li>
-<li><p>mysql 索引作用<br>（1）索引大大减少了服务器要扫描的数据量<br>（2）索引可以降随机 IO 变为顺序 IO<br>（3）索引可以帮助服务器避免排序和临时表</p>
-</li>
-<li><p>自增 id、uuid 的区别<br>（1）类型不同<br>（2）自增查询优化，uuid 影响插入速度</p>
-</li>
-<li><p>left join、inner join 的区别<br>（1）left join(左联接) 返回包括左表中的所有记录和右表中联结字段相等的记录<br>（2）right join(右联接) 返回包括右表中的所有记录和左表中联结字段相等的记录<br>（3）inner join(等值连接) 只返回两个表中联结字段相等的行</p>
-</li>
-<li><p>mysql 和 modo 的区别<br>mysql 关系型数据库 mongodb 是非关系数据库（主要）</p>
-</li>
-<li><p>mysql 存储引擎 和区别<br>（1）InnoDB 存储引擎：事务型数据库首选，支持事务安全表（ACID），支持行锁定和外 键是 mysql 5.5 之后的默认引擎<br>（2）MyISAM 存储引擎：不支持事务和外键，访问速度较快，是 mysql5.5 之前的默认引擎<br>（3）MEMORY： 保存在内存中的数据表 ，每个 memory 表对应一个磁盘文件。格式是.frm 访问速度很快 缺点是：mysql 服务关闭，数据丢失，另外对数据表大小有限制</p>
-</li>
+<li>如何判断一个字符串是另一个字符串的子串<br>indexof es6:include startWith endWith</li>
+<li>单点登陆（可以自己查一下，我也不是特别了解）<br>什么是单点登录？单点登录全称 Single Sign On（以下简称 SSO），是指在多系统应用群中登录一个系统，便可在其他所有系统中得到授权而无需再次登录，包括单点登录与单点注销两部分</li>
+<li>防止 sql 注入<br>(1).使用 escape() 对传入参数进行编码<br>(2)使用 connection.query ()的查询参数占位符<br>(3)使用 escapeId()编码 SQL 查询标识符<br>(4)使用 mysql.format()转义参数<a id="more"></a></li>
+<li>Node 好处：<br>(1).处理高并发 事件驱动 轻量 要用于搭建高性能的 web 服务器，<br>(2)它是一个 Javascript 运行环境　<br>(3)依赖于 Chrome V8 引擎进行代码解释　　<br>(4)事件驱动　　<br>(5)非阻塞 I/O 　　<br>(6)轻量、可伸缩，适于实时数据交互应用　　<br>(7).单进程，单线程</li>
+<li>Express 和 koa 的区别？<br>(1).异步 摆脱回调地域<br>(2).对 response 和 request 进行了封装 content<br>(3).Express 主要基于 Connect 中间件框架，功能丰富，随取随用，并且框架自身封装 了大量便利的功能，比如路由、视图处理等等。而 koa 主要基于 co 中间件框架，框架 自身并没集成太多功能，大部分功能需要用户自行 require 中间件去解决，但是由于其 基于 ES6 generator 特性的中间件机制，解决了长期诟病的“callback hell”和麻烦的 错误处理的问题，大受开发者欢迎</li>
+<li>事件驱动模型和事件循环<br>(1).事件驱动模型:当服务端收到请求时，就把它关闭 然后处理下一个请求 当第一个请 求处理完毕后 就放回处理队列 当达到队列开头 将结果返回给用户 好处：高效 扩展 性强 因为服务端一直接受请求 不等待任何读写操作<br>(2).事件循环：查看队列里面是否有队列里面有待处理的 如果有 交给主线程执行</li>
+<li>Redis<br>使用场景：支持 string、list、set、zset 和 hash 类型数据。<br>(1). 配合关系型数据库做高速缓存<br>• 缓存高频次访问的数据，降低数据库 io<br>• 分布式架构，做 session 共享<br>(2). 可以持久化特定数据。<br>• 利用 zset 类型可以存储排行榜<br>• 利用 list 的自然时间排序存储最新 n 个数据</li>
+<li>进程和线程<br>(1).进程是操作系统资源分配的基本单位，而线程是任务调度和执行的基本单位<br>(2).进程是线程的容器</li>
+<li>require()模块加载机制<br>(1).先判断是否存在文件缓存区中，存在直接导入，没有的话，在判断是否是原生模块，<br>(2).如果是原生模块，再看是否在原生模块缓存区中，如果有直接导入，没有的话加载原生模块，缓存原生模块，再导入<br>(3).如果不是原生模块，先查找文件模块，根据扩展名载入文件模块，缓存文件模块，在导入</li>
+<li>什么是 WebSocket,简述 WebSocket 连接过程<br>websocket，长链接，保持 http 请求不断开，服务端可以主动往客户端推送消息， 不需要客户端通过 http 不断请求</li>
+<li>SQL 中的 explain 的用途<br>执行计划，用来分析 sql，可以看出是否使用了索引</li>
+<li>什么是 WebSocket,简述 WebSocket 连接过程<br>websocket，长链接，保持 http 请求不断开，服务端可以主动往客户端推送消息， 不需要客户端通过 http 不断请求</li>
+<li>简述 event loop<br>时间循环机制，node 分两种任务队列，微任务（异步等操作）、宏任务（主进程）。<br>先执行一个红任务，执行完成后删除，执行所有微任务，在执行下一个宏任务</li>
+<li>node 的特点和试用场景<br>node 单线程，异步 io。适合高并发 io 操作多的情况。</li>
+<li>如何避免回调地狱<br>使用 async、await 避免回到地狱</li>
 </ol>
 
       
@@ -233,7 +218,7 @@
               
               <br>
               <strong>本文链接：</strong>
-              https://baoyu-11.github.io/2020/08/01/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/
+              https://baoyu-11.github.io/2020/08/03/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/
               <br>
               <strong>版权声明：</strong>
               本作品采用
@@ -333,7 +318,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://baoyu-11.github.io/2020/08/01/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://baoyu-11.github.io/2020/08/03/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -347,18 +332,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/08/03/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          node基础面试题(二)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/07/31/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2020/08/01/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">node基础面试题(一)</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -389,8 +365,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "https://baoyu-11.github.io/2020/08/01/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/", 
-    sourceId: "node基础面试题",
+    url: "https://baoyu-11.github.io/2020/08/03/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/", 
+    sourceId: "node基础面试题（二）",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
