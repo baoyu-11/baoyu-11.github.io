@@ -43,65 +43,94 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4d4d4d"></div>
+<div class="overlay"></div>
 <div class="intrude-less">
-	<header id="header" class="inner">
-		<a href="/" class="profilepic">
-			<img src="https://i.loli.net/2020/07/31/wFOuUjET7ftRxqG.jpg" class="js-avatar">
-		</a>
-		<hgroup>
-		  <h1 class="header-author"><a href="/"></a></h1>
-		</hgroup>
-		
+  <header id="header" class="inner">
+    <a href="/" class="profilepic">
+      <img src="https://i.loli.net/2020/07/31/wFOuUjET7ftRxqG.jpg" class="js-avatar" />
+    </a>
+    <hgroup>
+      <h1 class="header-author">
+        <a href="/"></a>
+      </h1>
+    </hgroup>
+    
 
-		<nav class="header-menu">
-			<ul>
-			
-				<li><a href="/null">侥幸的人生活不出人样</a></li>
-	        
-				<li><a href="/">主页</a></li>
-	        
-				<li><a href="/archives">归档</a></li>
-	        
-				<li><a target="_blank" rel="noopener" href="https://hanyu.baidu.com/shici/detail?pid=8e35084a4c0a4b93a0eb1eda76ebe3f8&from=kg0&highlight=%E8%80%81%E5%A4%AB%E8%81%8A%E5%8F%91%E5%B0%91%E5%B9%B4%E7%8B%82">随笔</a></li>
-	        
-				<li><a target="_blank" rel="noopener" href="http://shenyu-vip.lofter.com/">摄影</a></li>
-	        
-			</ul>
-		</nav>
-		<nav>
-			<a>总文章数 4</a>
-			<a>总字数 <span class="post-count">2.5k</span></a>
-	</nav>
-		<nav class="header-smart-menu">
-    		
-    			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
-    			
-            
-		</nav>
-		<nav class="header-nav">
-			<div class="social">
-				
-					<a class="github" target="_blank" href="https://github.com/baoyu-11/" title="github"><i class="icon-github"></i></a>
-		        
-					<a class="qq" target="_blank" href="https://i.loli.net/2020/07/31/F56xIiQoERm2sGH.png" title="qq"><i class="icon-qq"></i></a>
-		        
-					<a class="weixin" target="_blank" href="https://i.loli.net/2020/07/31/ZYUNHLMedRlrj9G.jpg" title="weixin"><i class="icon-weixin"></i></a>
-		        
-					<a class="mail" target="_blank" href="mailto:2536732928@qq.com" title="mail"><i class="icon-mail"></i></a>
-		        
-			</div>
-		</nav>
-	</header>		
+    <nav class="header-menu">
+      <ul>
+        
+        <li><a href="/null">侥幸的人生活不出人样</a></li>
+        
+        <li><a href="/">主页</a></li>
+        
+        <li><a href="/archives">归档</a></li>
+        
+        <li><a target="_blank" rel="noopener" href="https://hanyu.baidu.com/shici/detail?pid=8e35084a4c0a4b93a0eb1eda76ebe3f8&from=kg0&highlight=%E8%80%81%E5%A4%AB%E8%81%8A%E5%8F%91%E5%B0%91%E5%B9%B4%E7%8B%82">随笔</a></li>
+        
+        <li><a target="_blank" rel="noopener" href="http://shenyu-vip.lofter.com/">摄影</a></li>
+        
+      </ul>
+    </nav>
+    <nav>
+      <a>总文章数 4</a>
+      <a
+        >总字数
+        <span class="post-count">2.5k</span></a
+      >
+    </nav>
+    <nav class="header-smart-menu">
+       
+      <a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)"
+        >所有文章</a
+      >
+        
+      <a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)"
+        >友链</a
+      >
+        
+      <a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)"
+        >关于我</a
+      >
+       
+    </nav>
+    <nav class="header-nav">
+      <div class="social">
+        
+        <a
+          class="github"
+          target="_blank"
+          href="https://github.com/baoyu-11/"
+          title="github"
+          ><i class="icon-github"></i
+        ></a>
+        
+        <a
+          class="qq"
+          target="_blank"
+          href="https://i.loli.net/2020/07/31/F56xIiQoERm2sGH.png"
+          title="qq"
+          ><i class="icon-qq"></i
+        ></a>
+        
+        <a
+          class="weixin"
+          target="_blank"
+          href="https://i.loli.net/2020/07/31/ZYUNHLMedRlrj9G.jpg"
+          title="weixin"
+          ><i class="icon-weixin"></i
+        ></a>
+        
+        <a
+          class="mail"
+          target="_blank"
+          href="mailto:2536732928@qq.com"
+          title="mail"
+          ><i class="icon-mail"></i
+        ></a>
+        
+      </div>
+    </nav>
+  </header>
 </div>
 
     </div>
@@ -176,30 +205,31 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-node基础面试题（二）" class="article article-type-post " itemscope itemprop="blogPost">
+            <article
+  id="post-node基础面试题（二）"
+  class="article article-type-post "
+  itemscope
+  itemprop="blogPost"
+>
   <div class="article-inner">
     
-      <header class="article-header">
-        
+    <header class="article-header">
+      
   
     <h1 class="article-title" itemprop="name">
       node基础面试题(二)
     </h1>
   
-
-        
-        <a href="/2020/08/03/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/" class="archive-article-date">
+  <a href="/2020/08/03/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/" class="archive-article-date">
   	<time datetime="2020-08-03T03:29:34.908Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-03</time>
-</a>
-        
-      </header>
+</a> 
+    </header>
     
     <div align="center" class="post-count">
       字数：1.1k字 | 预计阅读时长：3分钟
-  </div>
+    </div>
     <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
+       <ol>
 <li>如何判断一个字符串是另一个字符串的子串<br>indexof es6:include startWith endWith</li>
 <li>单点登陆（可以自己查一下，我也不是特别了解）<br>什么是单点登录？单点登录全称 Single Sign On（以下简称 SSO），是指在多系统应用群中登录一个系统，便可在其他所有系统中得到授权而无需再次登录，包括单点登录与单点注销两部分</li>
 <li>防止 sql 注入<br>(1).使用 escape() 对传入参数进行编码<br>(2)使用 connection.query ()的查询参数占位符<br>(3)使用 escapeId()编码 SQL 查询标识符<br>(4)使用 mysql.format()转义参数<a id="more"></a></li>
@@ -216,55 +246,53 @@
 <li>node 的特点和试用场景<br>node 单线程，异步 io。适合高并发 io 操作多的情况。</li>
 <li>如何避免回调地狱<br>使用 async、await 避免回到地狱</li>
 </ol>
-
-      
-
-      
-      
-      
-        <div>
-          <blockquote>
-              <strong>本文作者：</strong>
-              
-                鲁宝玉
-              
-              <br>
-              <strong>本文链接：</strong>
-              https://baoyu-11.github.io/2020/08/03/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/
-              <br>
-              <strong>版权声明：</strong>
-              本作品采用
-              <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
-              进行许可。转载请注明出处！
-              
-                <br>
-                <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
-              
-          </blockquote>
+    
+      <div>
+        <blockquote>
+          <strong>本文作者：</strong>
+           鲁宝玉 
+          <br />
+          <strong>本文链接：</strong>
+          https://baoyu-11.github.io/2020/08/03/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/
+          <br />
+          <strong>版权声明：</strong>
+          本作品采用
+          <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+            >知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a
+          >
+          进行许可。转载请注明出处！ 
+          <br />
+          <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+            ><img
+              alt="知识共享许可协议"
+              style="border-width: 0;"
+              src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"
+          /></a>
           
-          
-          <hr>
-              <center><strong>乐于分享,专注互联网生活.</strong></center>
-          <hr>
-        </div>
-      
+        </blockquote>
 
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
+        
+        <hr />
+        <center><strong>乐于分享,专注互联网生活.</strong></center>
+        <hr />
+      </div>
+       
+      <div class="page-reward">
+        <a href="javascript:;" class="page-reward-btn tooltip-top">
+          <div class="tooltip tooltip-east">
             <span class="tooltip-item">
               赏
             </span>
             <span class="tooltip-content">
               <span class="tooltip-text">
                 <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <p class="reward-p">
+                    <i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i>
+                  </p>
                   <div class="reward-box">
-                    
-                    
+                     
                     <div class="reward-box-item">
-                      <img class="reward-img" src="https://i.loli.net/2020/07/31/M2gfYaEopDQxCyI.jpg">
+                      <img class="reward-img" src="https://i.loli.net/2020/07/31/M2gfYaEopDQxCyI.jpg" />
                       <span class="reward-type">微信</span>
                     </div>
                     
@@ -273,19 +301,13 @@
               </span>
             </span>
           </div>
-          </a>
-        </div>
+        </a>
+      </div>
       
     </div>
     <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
         
+   
 <div class="share-btn share-icons tooltip-left">
   <div class="tooltip tooltip-east">
     <span class="tooltip-item">
@@ -340,8 +362,7 @@
     </div>
   </div>
 </article>
-
-  
+ 
 <nav id="article-nav">
   
     <a href="/2020/08/03/node%E8%BF%9B%E9%98%B6%E5%AE%9E%E6%88%98%E9%9D%A2%E8%AF%95%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
@@ -360,9 +381,7 @@
     </a>
   
 </nav>
-
-
-<aside class="wrap-side-operation">
+  <aside class="wrap-side-operation">
     <div class="mod-side-operation">
         
         <div class="jump-container" id="js-jump-container" style="display:none;">
@@ -376,14 +395,7 @@
         
         
     </div>
-</aside>
-
-
-
-  
-  
-  
-  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+</aside>    <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
     url: "https://baoyu-11.github.io/2020/08/03/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/", 
@@ -392,15 +404,7 @@
     target: "cloud-tie-wrapper"
   };
 </script>
-<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-  
-
-  
-
-  
-
-  
-
+<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>     
 
           </div>
         </div>

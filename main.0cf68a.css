@@ -3639,3 +3639,21 @@ a.pswp__share--download:hover {
   /* color:#333; */
   transition: color 0.3s;
 }
+.left-col {
+  /* background:#fff; */
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://i.loli.net/2020/08/03/s3y94zhJwK8xLoA.jpg") no-repeat 0% 20% /
+      cover;
+  width: 300px;
+  position: fixed;
+  opacity: 1;
+  transition: all 0.2s ease-in;
+  height: 100%;
+  z-index: 999;
+  overflow: hidden;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}

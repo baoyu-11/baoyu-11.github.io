@@ -45,65 +45,94 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4d4d4d"></div>
+<div class="overlay"></div>
 <div class="intrude-less">
-	<header id="header" class="inner">
-		<a href="/" class="profilepic">
-			<img src="https://i.loli.net/2020/07/31/wFOuUjET7ftRxqG.jpg" class="js-avatar">
-		</a>
-		<hgroup>
-		  <h1 class="header-author"><a href="/"></a></h1>
-		</hgroup>
-		
+  <header id="header" class="inner">
+    <a href="/" class="profilepic">
+      <img src="https://i.loli.net/2020/07/31/wFOuUjET7ftRxqG.jpg" class="js-avatar" />
+    </a>
+    <hgroup>
+      <h1 class="header-author">
+        <a href="/"></a>
+      </h1>
+    </hgroup>
+    
 
-		<nav class="header-menu">
-			<ul>
-			
-				<li><a href="/null">侥幸的人生活不出人样</a></li>
-	        
-				<li><a href="/">主页</a></li>
-	        
-				<li><a href="/archives">归档</a></li>
-	        
-				<li><a target="_blank" rel="noopener" href="https://hanyu.baidu.com/shici/detail?pid=8e35084a4c0a4b93a0eb1eda76ebe3f8&from=kg0&highlight=%E8%80%81%E5%A4%AB%E8%81%8A%E5%8F%91%E5%B0%91%E5%B9%B4%E7%8B%82">随笔</a></li>
-	        
-				<li><a target="_blank" rel="noopener" href="http://shenyu-vip.lofter.com/">摄影</a></li>
-	        
-			</ul>
-		</nav>
-		<nav>
-			<a>总文章数 4</a>
-			<a>总字数 <span class="post-count">2.5k</span></a>
-	</nav>
-		<nav class="header-smart-menu">
-    		
-    			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
-    			
-            
-		</nav>
-		<nav class="header-nav">
-			<div class="social">
-				
-					<a class="github" target="_blank" href="https://github.com/baoyu-11/" title="github"><i class="icon-github"></i></a>
-		        
-					<a class="qq" target="_blank" href="https://i.loli.net/2020/07/31/F56xIiQoERm2sGH.png" title="qq"><i class="icon-qq"></i></a>
-		        
-					<a class="weixin" target="_blank" href="https://i.loli.net/2020/07/31/ZYUNHLMedRlrj9G.jpg" title="weixin"><i class="icon-weixin"></i></a>
-		        
-					<a class="mail" target="_blank" href="mailto:2536732928@qq.com" title="mail"><i class="icon-mail"></i></a>
-		        
-			</div>
-		</nav>
-	</header>		
+    <nav class="header-menu">
+      <ul>
+        
+        <li><a href="/null">侥幸的人生活不出人样</a></li>
+        
+        <li><a href="/">主页</a></li>
+        
+        <li><a href="/archives">归档</a></li>
+        
+        <li><a target="_blank" rel="noopener" href="https://hanyu.baidu.com/shici/detail?pid=8e35084a4c0a4b93a0eb1eda76ebe3f8&from=kg0&highlight=%E8%80%81%E5%A4%AB%E8%81%8A%E5%8F%91%E5%B0%91%E5%B9%B4%E7%8B%82">随笔</a></li>
+        
+        <li><a target="_blank" rel="noopener" href="http://shenyu-vip.lofter.com/">摄影</a></li>
+        
+      </ul>
+    </nav>
+    <nav>
+      <a>总文章数 4</a>
+      <a
+        >总字数
+        <span class="post-count">2.5k</span></a
+      >
+    </nav>
+    <nav class="header-smart-menu">
+       
+      <a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)"
+        >所有文章</a
+      >
+        
+      <a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)"
+        >友链</a
+      >
+        
+      <a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)"
+        >关于我</a
+      >
+       
+    </nav>
+    <nav class="header-nav">
+      <div class="social">
+        
+        <a
+          class="github"
+          target="_blank"
+          href="https://github.com/baoyu-11/"
+          title="github"
+          ><i class="icon-github"></i
+        ></a>
+        
+        <a
+          class="qq"
+          target="_blank"
+          href="https://i.loli.net/2020/07/31/F56xIiQoERm2sGH.png"
+          title="qq"
+          ><i class="icon-qq"></i
+        ></a>
+        
+        <a
+          class="weixin"
+          target="_blank"
+          href="https://i.loli.net/2020/07/31/ZYUNHLMedRlrj9G.jpg"
+          title="weixin"
+          ><i class="icon-weixin"></i
+        ></a>
+        
+        <a
+          class="mail"
+          target="_blank"
+          href="mailto:2536732928@qq.com"
+          title="mail"
+          ><i class="icon-mail"></i
+        ></a>
+        
+      </div>
+    </nav>
+  </header>
 </div>
 
     </div>
@@ -178,30 +207,31 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-node进阶实战面试题" class="article article-type-post " itemscope itemprop="blogPost">
+            <article
+  id="post-node进阶实战面试题"
+  class="article article-type-post "
+  itemscope
+  itemprop="blogPost"
+>
   <div class="article-inner">
     
-      <header class="article-header">
-        
+    <header class="article-header">
+      
   
     <h1 class="article-title" itemprop="name">
       node进阶实战面试题
     </h1>
   
-
-        
-        <a href="/2020/08/03/node%E8%BF%9B%E9%98%B6%E5%AE%9E%E6%88%98%E9%9D%A2%E8%AF%95%E9%A2%98/" class="archive-article-date">
+  <a href="/2020/08/03/node%E8%BF%9B%E9%98%B6%E5%AE%9E%E6%88%98%E9%9D%A2%E8%AF%95%E9%A2%98/" class="archive-article-date">
   	<time datetime="2020-08-03T04:15:47.885Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-03</time>
-</a>
-        
-      </header>
+</a> 
+    </header>
     
     <div align="center" class="post-count">
       字数：128字 | 预计阅读时长：1分钟
-  </div>
+    </div>
     <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
+       <ol>
 <li>写出以下程序的执行结果<br>for(var i=0;i&lt;5;i++){<br>setTimeout(function(){<br>console.log(i);<br>});<br>}</li>
 </ol>
 <p>答：输入 4 个 5，因为 setTimeout 是异步，主线程执行完成后才会执行 settimeout 中的方法，这时候 i 已经是 5 了。<br>想要输入 0、1、2、3、4，需要把 var 改成 let，这样 i 会赋值到每个 setTimeout 中<a id="more"></a></p>
@@ -211,55 +241,53 @@
 <li><p>对于分布式集群服务器的设计思路(基础版)<br><img src="https://img-blog.csdnimg.cn/2020080312135322.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x1X2x1bmF0aWM=,size_16,color_FFFFFF,t_70"></p>
 </li>
 </ol>
-
-      
-
-      
-      
-      
-        <div>
-          <blockquote>
-              <strong>本文作者：</strong>
-              
-                鲁宝玉
-              
-              <br>
-              <strong>本文链接：</strong>
-              https://baoyu-11.github.io/2020/08/03/node%E8%BF%9B%E9%98%B6%E5%AE%9E%E6%88%98%E9%9D%A2%E8%AF%95%E9%A2%98/
-              <br>
-              <strong>版权声明：</strong>
-              本作品采用
-              <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
-              进行许可。转载请注明出处！
-              
-                <br>
-                <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
-              
-          </blockquote>
+    
+      <div>
+        <blockquote>
+          <strong>本文作者：</strong>
+           鲁宝玉 
+          <br />
+          <strong>本文链接：</strong>
+          https://baoyu-11.github.io/2020/08/03/node%E8%BF%9B%E9%98%B6%E5%AE%9E%E6%88%98%E9%9D%A2%E8%AF%95%E9%A2%98/
+          <br />
+          <strong>版权声明：</strong>
+          本作品采用
+          <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+            >知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a
+          >
+          进行许可。转载请注明出处！ 
+          <br />
+          <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+            ><img
+              alt="知识共享许可协议"
+              style="border-width: 0;"
+              src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"
+          /></a>
           
-          
-          <hr>
-              <center><strong>乐于分享,专注互联网生活.</strong></center>
-          <hr>
-        </div>
-      
+        </blockquote>
 
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
+        
+        <hr />
+        <center><strong>乐于分享,专注互联网生活.</strong></center>
+        <hr />
+      </div>
+       
+      <div class="page-reward">
+        <a href="javascript:;" class="page-reward-btn tooltip-top">
+          <div class="tooltip tooltip-east">
             <span class="tooltip-item">
               赏
             </span>
             <span class="tooltip-content">
               <span class="tooltip-text">
                 <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <p class="reward-p">
+                    <i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i>
+                  </p>
                   <div class="reward-box">
-                    
-                    
+                     
                     <div class="reward-box-item">
-                      <img class="reward-img" src="https://i.loli.net/2020/07/31/M2gfYaEopDQxCyI.jpg">
+                      <img class="reward-img" src="https://i.loli.net/2020/07/31/M2gfYaEopDQxCyI.jpg" />
                       <span class="reward-type">微信</span>
                     </div>
                     
@@ -268,19 +296,13 @@
               </span>
             </span>
           </div>
-          </a>
-        </div>
+        </a>
+      </div>
       
     </div>
     <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
         
+   
 <div class="share-btn share-icons tooltip-left">
   <div class="tooltip tooltip-east">
     <span class="tooltip-item">
@@ -335,8 +357,7 @@
     </div>
   </div>
 </article>
-
-  
+ 
 <nav id="article-nav">
   
   
@@ -346,9 +367,7 @@
     </a>
   
 </nav>
-
-
-<aside class="wrap-side-operation">
+  <aside class="wrap-side-operation">
     <div class="mod-side-operation">
         
         <div class="jump-container" id="js-jump-container" style="display:none;">
@@ -362,14 +381,7 @@
         
         
     </div>
-</aside>
-
-
-
-  
-  
-  
-  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+</aside>    <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
     url: "https://baoyu-11.github.io/2020/08/03/node%E8%BF%9B%E9%98%B6%E5%AE%9E%E6%88%98%E9%9D%A2%E8%AF%95%E9%A2%98/", 
@@ -378,15 +390,7 @@
     target: "cloud-tie-wrapper"
   };
 </script>
-<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-  
-
-  
-
-  
-
-  
-
+<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>     
 
           </div>
         </div>
