@@ -6,21 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://baoyu-11.github.io">
-  <title>node进阶实战面试题 | 宝玉的学习之路</title>
+  <title>创建Go的第一个项目 | 宝玉的学习之路</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="写出以下程序的执行结果for(var i&#x3D;0;i&lt;5;i++){setTimeout(function(){console.log(i);});}  答：输入 4 个 5，因为 setTimeout 是异步，主线程执行完成后才会执行 settimeout 中的方法，这时候 i 已经是 5 了。想要输入 0、1、2、3、4，需要把 var 改成 let，这样 i 会赋值到每个 setTime">
+  <meta name="description" content="我的博客：https:&#x2F;&#x2F;baoyu-11.github.io&#x2F;  (博客中有更多的信息，希望能给您带来帮助) 前言今天也是我接触go的第一天，想学习这门语言，但有不知道从何下手。于是我打算从创建第一个go项目开始。从hello world开始 一.安装这个比较简单，我就不过多阐述了。https:&#x2F;&#x2F;jingyan.baidu.com&#x2F;article&#x2F;3c48dd3492fc1ee10be358d">
 <meta property="og:type" content="article">
-<meta property="og:title" content="node进阶实战面试题">
-<meta property="og:url" content="https://baoyu-11.github.io/2020/08/03/node%E8%BF%9B%E9%98%B6%E5%AE%9E%E6%88%98%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:title" content="创建Go的第一个项目">
+<meta property="og:url" content="https://baoyu-11.github.io/2020/08/04/%E5%88%9B%E5%BB%BAGo%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE/index.html">
 <meta property="og:site_name" content="宝玉的学习之路">
-<meta property="og:description" content="写出以下程序的执行结果for(var i&#x3D;0;i&lt;5;i++){setTimeout(function(){console.log(i);});}  答：输入 4 个 5，因为 setTimeout 是异步，主线程执行完成后才会执行 settimeout 中的方法，这时候 i 已经是 5 了。想要输入 0、1、2、3、4，需要把 var 改成 let，这样 i 会赋值到每个 setTime">
+<meta property="og:description" content="我的博客：https:&#x2F;&#x2F;baoyu-11.github.io&#x2F;  (博客中有更多的信息，希望能给您带来帮助) 前言今天也是我接触go的第一天，想学习这门语言，但有不知道从何下手。于是我打算从创建第一个go项目开始。从hello world开始 一.安装这个比较简单，我就不过多阐述了。https:&#x2F;&#x2F;jingyan.baidu.com&#x2F;article&#x2F;3c48dd3492fc1ee10be358d">
 <meta property="og:locale">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2020080312135322.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x1X2x1bmF0aWM=,size_16,color_FFFFFF,t_70">
-<meta property="article:published_time" content="2020-08-03T04:15:47.885Z">
-<meta property="article:modified_time" content="2020-08-03T04:17:12.414Z">
+<meta property="article:published_time" content="2020-08-04T03:38:43.735Z">
+<meta property="article:modified_time" content="2020-08-04T03:40:24.264Z">
 <meta property="article:author" content="鲁宝玉">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2020080312135322.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x1X2x1bmF0aWM=,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="宝玉的学习之路" type="application/atom+xml">
   
@@ -208,7 +206,7 @@
           </div>
           <div id="js-content" class="content-ll">
             <article
-  id="post-node进阶实战面试题"
+  id="post-创建Go的第一个项目"
   class="article article-type-post "
   itemscope
   itemprop="blogPost"
@@ -219,36 +217,34 @@
       
   
     <h1 class="article-title" itemprop="name">
-      node进阶实战面试题
+      创建Go的第一个项目
     </h1>
   
-  <a href="/2020/08/03/node%E8%BF%9B%E9%98%B6%E5%AE%9E%E6%88%98%E9%9D%A2%E8%AF%95%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2020-08-03T04:15:47.885Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-03</time>
+  <a href="/2020/08/04/%E5%88%9B%E5%BB%BAGo%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE/" class="archive-article-date">
+  	<time datetime="2020-08-04T03:38:43.735Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-04</time>
 </a> 
     </header>
     
     <div align="center" class="post-count">
-      字数：128字 | 预计阅读时长：1分钟
+      字数：412字 | 预计阅读时长：1分钟
     </div>
     <div class="article-entry" itemprop="articleBody">
-       <ol>
-<li>写出以下程序的执行结果<br>for(var i=0;i&lt;5;i++){<br>setTimeout(function(){<br>console.log(i);<br>});<br>}</li>
-</ol>
-<p>答：输入 4 个 5，因为 setTimeout 是异步，主线程执行完成后才会执行 settimeout 中的方法，这时候 i 已经是 5 了。<br>想要输入 0、1、2、3、4，需要把 var 改成 let，这样 i 会赋值到每个 setTimeout 中<a id="more"></a></p>
-<ol start="2">
-<li><p>58.采用关键字 class 定义 Point 类，添加静态方法，color<br>class Point {<br>static Color() {}<br>}</p>
-</li>
-<li><p>对于分布式集群服务器的设计思路(基础版)<br><img src="https://img-blog.csdnimg.cn/2020080312135322.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x1X2x1bmF0aWM=,size_16,color_FFFFFF,t_70"></p>
-</li>
-</ol>
-    
+       <p>我的博客：<a href="https://baoyu-11.github.io/">https://baoyu-11.github.io/</a>  (博客中有更多的信息，希望能给您带来帮助)</p>
+<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>今天也是我接触go的第一天，想学习这门语言，但有不知道从何下手。于是我打算从创建第一个go项目开始。从hello world开始</p>
+<h4 id="一-安装"><a href="#一-安装" class="headerlink" title="一.安装"></a>一.安装</h4><p>这个比较简单，我就不过多阐述了。<br><a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/3c48dd3492fc1ee10be358d7.html">https://jingyan.baidu.com/article/3c48dd3492fc1ee10be358d7.html</a><br>这个是我随便找的一个安装过程，不多说，进行下一步。</p>
+<h4 id="二-创建第一个go的项目"><a href="#二-创建第一个go的项目" class="headerlink" title="二.创建第一个go的项目"></a>二.创建第一个go的项目</h4><p>1.创建工程的文件夹GXGo<br>2.在GXGo文件夹里分别创建src、pkg、bin三个文件夹<a id="more"></a><br>3.在src里创建hellowrold文件夹<br>4.在hellowrold文件夹中创建hellowrold.go文件，以创建main工程类,代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line"></span><br><span class="line">import &quot;fmt&quot;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">    fmt.Println(&quot;hello world!&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>5.运行go脚本<br>go run hellowrold.go     （运行语句）<br>hello world!       （执行结果）</p>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>1.为什么要创建这三个文件夹呢<br>因为Go规定如下：<br>src: 存放源代码(.go .c .h .s等)<br>pkg: 编译后生成的文件 (如: .a)<br>bin: 编译后生成的可执行文件(为了方便.可以把此目录加入到$PATH变量中.如果有多个GOPATH,那么使用${GOPATH//://bin:}/bin添加所有的bin目录)</p>
+<p>2.hellowrold.go文件中的每行代码的含义<br>（1）package main 是声明包,第一行必须是非注释,并指明文件属于哪个包.<br>（2）import “fmt” 是引入包,fmt可以实现 I/O 格式化<br>（3）func main(){} 为可执行函数<br>（4）fmt.Println(“Hello Wrold”) 是执行fmt输出字符串</p>
+<h5 id="至此你的第一个go项目就完成了"><a href="#至此你的第一个go项目就完成了" class="headerlink" title="至此你的第一个go项目就完成了"></a>至此你的第一个go项目就完成了</h5>    
       <div>
         <blockquote>
           <strong>本文作者：</strong>
            鲁宝玉 
           <br />
           <strong>本文链接：</strong>
-          https://baoyu-11.github.io/2020/08/03/node%E8%BF%9B%E9%98%B6%E5%AE%9E%E6%88%98%E9%9D%A2%E8%AF%95%E9%A2%98/
+          https://baoyu-11.github.io/2020/08/04/%E5%88%9B%E5%BB%BAGo%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE/
           <br />
           <strong>版权声明：</strong>
           本作品采用
@@ -347,7 +343,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://baoyu-11.github.io/2020/08/03/node%E8%BF%9B%E9%98%B6%E5%AE%9E%E6%88%98%E9%9D%A2%E8%AF%95%E9%A2%98/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://baoyu-11.github.io/2020/08/04/%E5%88%9B%E5%BB%BAGo%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -360,18 +356,9 @@
  
 <nav id="article-nav">
   
-    <a href="/2020/08/04/%E5%88%9B%E5%BB%BAGo%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          创建Go的第一个项目
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/08/03/node%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">node基础面试题(二)</div>
+    <a href="/2020/08/03/node%E8%BF%9B%E9%98%B6%E5%AE%9E%E6%88%98%E9%9D%A2%E8%AF%95%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">node进阶实战面试题</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -393,8 +380,8 @@
 </aside>    <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "https://baoyu-11.github.io/2020/08/03/node%E8%BF%9B%E9%98%B6%E5%AE%9E%E6%88%98%E9%9D%A2%E8%AF%95%E9%A2%98/", 
-    sourceId: "node进阶实战面试题",
+    url: "https://baoyu-11.github.io/2020/08/04/%E5%88%9B%E5%BB%BAGo%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE/", 
+    sourceId: "创建Go的第一个项目",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
