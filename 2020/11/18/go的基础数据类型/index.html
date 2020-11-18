@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="https://baoyu-11.github.io">
   <title>go的数据类型 | 宝玉的学习之路</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="我的博客：https:&#x2F;&#x2F;baoyu-11.github.io&#x2F; (博客中有更多的信息，希望能给您带来帮助) 前言go语言属于强类型语言，我们先了解一下它的基础数据类型 一.go基础数据类型1.数字类型    （1）整形（int、unit）    （2）浮点型（float32、float64）    （3）其他（byte（类似unit8）、rune（类似int32）等字符串类型）2.派生类型 （1">
+  <meta name="description" content="我的博客：https:&#x2F;&#x2F;baoyu-11.github.io&#x2F; (博客中有更多的信息，希望能给您带来帮助) 前言go语言属于强类型语言，我们先了解一下它的基础数据类型 一.go基础数据类型1.数字类型    （1）整形（int、unit）    （2）浮点型（float32、float64）    （3）其他（byte（类似unit8）、rune（类似int32）等字符串类型）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="go的数据类型">
 <meta property="og:url" content="https://baoyu-11.github.io/2020/11/18/go%E7%9A%84%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/index.html">
 <meta property="og:site_name" content="宝玉的学习之路">
-<meta property="og:description" content="我的博客：https:&#x2F;&#x2F;baoyu-11.github.io&#x2F; (博客中有更多的信息，希望能给您带来帮助) 前言go语言属于强类型语言，我们先了解一下它的基础数据类型 一.go基础数据类型1.数字类型    （1）整形（int、unit）    （2）浮点型（float32、float64）    （3）其他（byte（类似unit8）、rune（类似int32）等字符串类型）2.派生类型 （1">
+<meta property="og:description" content="我的博客：https:&#x2F;&#x2F;baoyu-11.github.io&#x2F; (博客中有更多的信息，希望能给您带来帮助) 前言go语言属于强类型语言，我们先了解一下它的基础数据类型 一.go基础数据类型1.数字类型    （1）整形（int、unit）    （2）浮点型（float32、float64）    （3）其他（byte（类似unit8）、rune（类似int32）等字符串类型）">
 <meta property="og:locale">
 <meta property="article:published_time" content="2020-11-18T03:21:57.669Z">
-<meta property="article:modified_time" content="2020-11-18T03:22:38.277Z">
+<meta property="article:modified_time" content="2020-11-18T03:27:05.834Z">
 <meta property="article:author" content="鲁宝玉">
 <meta name="twitter:card" content="summary">
   
@@ -231,7 +231,9 @@
     <div class="article-entry" itemprop="articleBody">
        <p>我的博客：<a href="https://baoyu-11.github.io/">https://baoyu-11.github.io/</a> (博客中有更多的信息，希望能给您带来帮助)</p>
 <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>go语言属于强类型语言，我们先了解一下它的基础数据类型</p>
-<h4 id="一-go基础数据类型"><a href="#一-go基础数据类型" class="headerlink" title="一.go基础数据类型"></a>一.go基础数据类型</h4><p>1.数字类型<br>    （1）整形（int、unit）<br>    （2）浮点型（float32、float64）<br>    （3）其他（byte（类似unit8）、rune（类似int32）等字符串类型）<br>2.派生类型</p>
+<h4 id="一-go基础数据类型"><a href="#一-go基础数据类型" class="headerlink" title="一.go基础数据类型"></a>一.go基础数据类型</h4><p>1.数字类型<br>    （1）整形（int、unit）<br>    （2）浮点型（float32、float64）<br>    （3）其他（byte（类似unit8）、rune（类似int32）等字符串类型）</p>
+<a id="more"></a>
+<p>2.派生类型</p>
 <pre><code>（1）指针类型（Pointer）
 （2）数组类型（Array）
 （3）结构类型（Struct）
@@ -239,7 +241,7 @@
 （5）函数类型（Function）
 （6）切片类型（Slice）
 （7）接口类型（interface）
-（8）Map类型（Map）</code></pre>
+（8）Map类型（Map）        </code></pre>
 <h4 id="二-go基础数据类型详解"><a href="#二-go基础数据类型详解" class="headerlink" title="二.go基础数据类型详解"></a>二.go基础数据类型详解</h4><p>1.整形：整型分为以下两个大类： 按长度分为：int8、int16、int32、int64 对应的无符号整型：uint8、uint16、uint32、uint64<br>其中，uint8就是我们熟知的byte型，int16对应C语言中的short型，int64对应C语言中的long型。（注意： 在使用int和 uint类型时，不能假定它是32位或64位的整型，而是考虑int和uint可能在不同平台上的差异。）</p>
 <p>2.浮点型：Go语言支持两种浮点型数：float32和float64。这两种浮点型数据格式遵循IEEE 754标准： float32 的浮点数的最大范围约为 3.4e38，可以使用常量定义：math.MaxFloat32。 float64 的浮点数的最大范围约为 1.8e308，可以使用一个常量定义：math.MaxFloat64。</p>
 <p>3.复数：复数有实部和虚部，complex64的实部和虚部为32位，complex128的实部和虚部为64位。</p>
